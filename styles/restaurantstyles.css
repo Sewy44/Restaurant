@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+  }
+
+body{
+    background-color: #06BEE1;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    padding:0px;
+}
+
+.jumbotron{background-color: #2A2E45;}
+
+header, footer{
+    background-color:#FB5012;
+    text-align:center;
+    
+}
+
+header{
+    padding:10px;
+    box-sizing:border-box;
+    font-family:"Bitstream Vera Serif Bold", serif;
+    border-radius: 10px;
+}
+
+.my-4{border-color:#FB5012}
+
+h3{text-align:center;}
+
+ul {
+    border-top:2px solid #2A2E45;
+    border-bottom:2px solid #2A2E45;
+    margin-top:2px;
+    padding:10px;
+    width: 100%;
+    text-align:center;}
+
+li { display:inline;
+margin:20px;
+}
+
+footer{
+    text-align:center;
+    color:#FFFFFF;
+    margin-top:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-bottom:5px;
+}
+
+a{  
+    background-color:#2A2E45;
+    color:#FFFFFF;
+}
+
+a:hover{
+    color:#2A2E45;
+    background-color:#FB5012;
+    font-weight: bold;
+}
+
+a:active{
+    background-color: #FFF;
+    color:#948392;
+}
+
+a:visited{
+    color:aqua;
+}
+
+#story{
+       width:400px;
+       margin-left:33%;
+     text-indent: 15px;
+       Margin-top:10px;
+}
+

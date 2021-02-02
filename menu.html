@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/restaurantstyles.css">
+    <style>
+        .table {
+            width: 100%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .table tr th,
+        .table tr td {
+            border: 2px solid #2A2E45;
+            width: 33%;
+        }
+
+        .table tr th {
+            color: #FFF;
+            background-color: #2A2E45;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .table tr td {
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        #drinks {
+            margin-left: 25%;
+            width: 50%;
+            text-align: center;
+            border-collapse: separate;
+            border-spacing: 0
+        }
+
+        #drinks tr th,
+        #drinks tr td {
+            border: solid #2A2E45 2px;
+        }
+
+        #drinks tr th {
+            color: #FFF;
+            background-color: #2A2E45;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        #drinks tr:last-child td:last-child {
+            border-bottom-right-radius: 25px;
+        }
+
+        #drinks tr:last-child td:first-child {
+            border-bottom-left-radius: 25px;
+        }
+
+        th {
+            font-size: 1.2em;
+            height: 20px;
+        }
+    </style>
+</head>
+<main>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <div class="container">
+                    <header>
+                        <h1 class="display-4">Sewy's Vegan Deli</h1>
+                        <p class="lead"> Sandwiches so good, you'll never know it's VEGAN!</p>
+                    </header>
+                    <hr class="my-4">
+                    <p style="color:#FFF">Join us for the grand opening of our second location in the Highlands on
+                        Febuary 14th!</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="btn badge-pill" href="index.html">Home</a></li>
+                    <li><a class="btn badge-pill" href="menu.html">Menu</a></li>
+                    <li><a class="btn badge-pill" href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class='container'>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Burger and Fries</th>
+                        <th scope="col">Hot Dog and Chips</th>
+                        <th scope="col">Italian Sausage and Peppers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="col">
+                            <p scope="row">An American Classic!</p>
+                            <p scope="row">Your choice - with or without cheese</p>
+                            <p scope="row">Pickle, onion, tomato, and lettuce</p>
+                            <p scope="row">Served with our famous thick cut french fries</p>
+                            <p scope="row">$7.95</p>
+                        </td>
+                        <td scope="col">
+                            <p scope="row">A Summer Classic!</p>
+                            <p scope="row">Your choice - white or wheat bread</p>
+                            <p scope="row">Relish, mustard, and ketchup</p>
+                            <p scope="row">Served with our house-made chips</p>
+                            <p scope="row">$7.95</p>
+                        </td>
+                        <td scope="col">
+                            <p scope="row">An All Time Favorite!</p>
+                            <p scope="row">Your choice - mild or spicy Cole Slaw</p>
+                            <p scope="row">Served with garlic mashers</p>
+                            <p scope="row">$10.95</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <table class="table">
+                <br>
+                <thead>
+                    <tr>
+                        <th scope="col">Tenderloin Sandwich and Chips</th>
+                        <th scope="col">House Salad</th>
+                        <th scope="col">Brisket Sandwich and Fries</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="col">
+                            <p scope="row">Really Hits the Spot!</p>
+                            <p scope="row">Plain or sesame seed bun</p>
+                            <p scope="row">Pickle, onion, tomato, and lettuce</p>
+                            <p scope="row">Served with our house-made chips</p>
+                            <p scope="row">$8.95</p>
+                        </td>
+                        <td scope="col">
+                            <p scope="row">On the Lighter Side</p>
+                            <p scope="row">Your choice - with or without cheese</p>
+                            <p scope="row">Iceberg lettuce, tomatoes, peppers</p>
+                            <p scope="row">Thousand Island or Ranch Dressing</p>
+                            <p scope="row">Served with a dinner roll</p>
+                            <p scope="row">$6.95</p>
+                        </td>
+                        <td scope="col">
+                            <p scope="row">A Taste of Texas!</p>
+                            <p scope="row">Smoked brisket on thick-cut Texas Toast</p>
+                            <p scope="row">Cole Slaw</p>
+                            <p scope="row">Served with our famous thick cut french fries</p>
+                            <p scope="row">$7.95</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="container">
+            <table id="drinks">
+                <thead>
+                    <tr>
+                        <th colspan="2">Beverages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Root Beer</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td>Lemonade</td>
+                        <td>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <hr>
+            <footer>
+                <p>4023 Sandwich Eater Dr., Louisville, KY 40241</p>
+                <p>502-555-9611</p>
+            </footer>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        </div>
+    </body>
+</main>
+
+</html>
