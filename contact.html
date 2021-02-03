@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/restaurantstyles.css">
     <style>
         form {
             color: #FFF;
         }
 
-        #name,
-        #email,
-        #phone,
+        #validationCustom01,
+        #validationCustom02,
+        #validationCustom03,
         #reason {
             border: 2px solid;
             width: 50%;
@@ -48,21 +49,15 @@
             padding-left: 5px;
             margin: 10px 0;
             box-sizing: border-box;
-            font-size: 1em;
-            background-color: #06BEE1;
             border-color: #2A2E45;
-            border-radius: 25em;
         }
 
         legend {
             font-size: 1em;
             font-weight: bold;
-            color: #FFF;
-            background-color: #2A2E45;
+            color: #2A2E45;
             padding-left: 10px;
             padding-right: 5px;
-            width: 70%;
-            border-radius: 25em;
         }
 
         input[type=submit] {
@@ -114,20 +109,78 @@
                         Febuary 14th!</p>
                 </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a class="btn badge-pill" href="index.html">Home</a></li>
-                    <li><a class="btn badge-pill" href="menu.html">Menu</a></li>
-                    <li><a class="btn badge-pill" href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            <form action="submit.html" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required> <br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" placeholder="Enter your email" required><br>
-                <label for="phone">Phone:</label><br>
-                <input type="text" id="phone" name="phone" placeholder="555-555-5555" required><br>
+
+
+            <div>
+                <nav>
+                    <ul>
+                        <li><a class="btn btn badge-pill" href="index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="25" height="25" fill="currentColor" class="bi bi-house-door"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                                </svg></a>
+                        </li>
+                        <li><a class="btn btn badge-pill" href="menu.html">Menu</a></li>
+                        <li><a class="btn btn badge-pill" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                <!--<ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                </ol>-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Location.jpg" class="d-block w-100" alt="image of new location">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second Location Coming Soon!</h5>
+                            <p>Join us on February 14th for the grand opening of our second location in The Highlands!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Menu.jpg" class="d-block w-100" alt="image of new menu item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Seasonal Menu</h5>
+                            <p>We're rolling out a seasonal menu, with special options for this season.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/SGBrew.jpg" class="d-block w-100" alt="image of drink of the month">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Drink of the Month</h5>
+                            <p>The drink of the month is the SG Special Brew.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>-->
+            </div>
+            <form action="submit.html" class="dow g-3 needs validation" method="POST" novalidate="">
+                <label for="validationCustom01" class="form-label">Name:</label><br>
+                <input type="text" class="form-control" id="validationCustom01" value="" name="name"
+                    placeholder="Enter your name" required>
+                <div class="valid-feedback">Looks good!</div>
+
+                <label for="validationCustom02" class="form-label">Email:</label><br>
+                <input type="text" class="form-control" id="validationCustom02" name="email" value=""
+                    placeholder="Enter your email" required>
+                <div class="valid-feedback">Looks good!</div>
+
+                <label for="validationCustom03" class="form-label">Phone:</label><br>
+                <input type="number" class="form-control" id="validationCustom03" value="" name="phone"
+                    placeholder="555-555-5555" required>
+                <div class="valid-feedback">Looks good!</div>
+
                 <label for="reason">Reason for Inquiry:</label><br>
                 <select name="reason" id="reason">
                     <option value="default" selected>Catering(default)</option>
@@ -138,7 +191,6 @@
                 <label for="additional-info" style="font-weight:normal;">Additional Information</label><br>
                 <textarea name="addtional-info" id="additional-info"
                     placeholder="Please list any additional information that would help us satisfy your order..."></textarea><br>
-
                 <fieldset>
                     <legend>Have you been to the restaurant?</legend>
                     <input type="radio" id="choice1" name="questionnaire" value="yes" class="choice">
@@ -166,13 +218,11 @@
                 <p>4023 Sandwich Eater Dr., Louisville, KY 40241</p>
                 <p>502-555-9611</p>
             </footer>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
         </div>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
     </body>
 </main>
 
